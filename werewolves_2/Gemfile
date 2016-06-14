@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
-gem 'devise_token_auth'
-gem 'omniauth'
+
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
 # Use postgresql as the database for Active Record
@@ -17,6 +17,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'ngannotate-rails'
 gem 'angular-rails-templates'
+gem 'devise', '~> 3.4.0'
+gem 'sprockets'
 
 
 # Use ActiveModel has_secure_password
@@ -33,7 +35,9 @@ group :development, :test do
   gem 'byebug'
   gem 'rspec-rails'
   gem 'rspec'
+  gem 'capybara'
   gem "factory_girl_rails", "~> 4.0"
+  gem 'selenium-webdriver'
 end
 
 group :development do
@@ -42,4 +46,7 @@ group :development do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+end
+source "http://rails-assets.org" do
+  gem 'rails-assets-angular-devise'
 end

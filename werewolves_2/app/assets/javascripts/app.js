@@ -1,4 +1,4 @@
-angular.module('werewolvesTwo',[ 'ui.router', 'templates', 'ng-token-auth'])
+angular.module('werewolvesTwo',[ 'ui.router', 'templates','Devise'])
   .config(['$stateProvider', '$urlRouterProvider',
     function($stateProvider, $urlRouterProvider) {
 
@@ -13,11 +13,7 @@ angular.module('werewolvesTwo',[ 'ui.router', 'templates', 'ng-token-auth'])
           templateUrl: 'posts/_posts.html',
           controller: 'PostsCtrl'
         })
-        .state('sign_in',{
-          url: '/sign_in',
-          templateUrl: 'views/user_sessions/new.html',
-          controller: 'UserSessionsCtrl'
-        })
+
       $urlRouterProvider.otherwise('home');
     }
   ]);

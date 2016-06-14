@@ -5,17 +5,20 @@
   <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.6/angular.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.10/angular-ui-router.js"></script>
-  <script src="assets/javascripts/controllers/user_sessions.js" type="text/javascript"></script>
+  
 
-  <%= stylesheet_link_tag    'application', media: 'all' %>
-  <%= javascript_include_tag 'application' %>
+</script>
+
+  <%= stylesheet_link_tag  'application', media: 'all' %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+
   <%= csrf_meta_tags %>
 </head>
-<li ng-show="!user.id"><a ng-href="/sign_in">Sign in</a></li>
-<li ng-show="user.id"><a ng-click='signOut()'>Sign out</a></li>
+
 <body ng-app="werewolvesTwo" ng-controller="MainCtrl">
   <div class="row">
     <div class="col-md-6 col-md-offset-3">
+      <div ng-include="'nav/_nav.html'"></div>
        <ui-view></ui-view>
       <div class="page-header">
         <h1>Flapper News</h1>
