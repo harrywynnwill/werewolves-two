@@ -1,0 +1,17 @@
+{
+  "name": "werewolves_2",
+  "homepage": "https://github.com/harrywynnwill/werewolves-two",
+  "authors": [
+    "Harry Wynn-Williams <harrywynnwilliams@googlemail.com>"
+  ],
+  "description": "",
+  "main": "y",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
